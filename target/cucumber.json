@@ -1,0 +1,126 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1398619200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "StepDefinition.SalesforceStepDefinition.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-12T12:14:18.285Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2072857100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.Setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate the login failure using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-simplilearn;validate-the-login-failure-using-parameters",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 702281000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username as \"prathiba.sankararaj@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prathiba.sankararaj@gmail.com\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.SalesforceStepDefinition.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 365800800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter password as \"Test_1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test_1234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinition.SalesforceStepDefinition.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160310700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on login",
+            "match": {
+              "location": "StepDefinition.SalesforceStepDefinition.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7661502900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be able to see the Home page.",
+            "match": {
+              "location": "StepDefinition.SalesforceStepDefinition.i_should_be_able_to_see_the_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This feature will be used to test the login functionlity of simplilearn",
+    "description": "",
+    "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-simplilearn",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Salesforce_login.feature",
+    "tags": []
+  }
+]

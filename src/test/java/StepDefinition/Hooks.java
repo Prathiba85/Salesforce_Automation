@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -22,7 +22,10 @@ public static WebDriver driver;
 	public void Setup()
 	{
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
+		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 		
@@ -35,6 +38,6 @@ public static WebDriver driver;
 	       // if(scenario.isFailed()) {
 	             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	            scenario.attach(screenshot, "image/png",scenario.getName());                       
-		driver.quit();
+		//driver.quit();
 	}
 }

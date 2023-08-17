@@ -90,13 +90,13 @@ public class SalesforceStepDefinition {
 	}
 
 	@When("I enter position title as {string}")
-	public void i_enter_position_title_as(String positiontitle) {
+	public void i_enter_position_title_as(String positiontitle) throws InterruptedException {
 		pp.enterTitle(positiontitle);
 	    
 	}
 
 	@When("I enter minimum pay as {string}")
-	public void i_enter_minimum_pay_as(String minpay) {
+	public void i_enter_minimum_pay_as(String minpay) throws InterruptedException {
 		pp.enterMinimumPay(minpay);
 	    
 	}
@@ -107,7 +107,7 @@ public class SalesforceStepDefinition {
 	}
 
 	@When("Click on save")
-	public void click_on_save() {
+	public void click_on_save() throws InterruptedException {
 		pp.clickSave();
 	    
 	}

@@ -27,7 +27,7 @@ public class PositionsPage extends BasePage {
 	public void clickPositiontab() throws InterruptedException
 	
 	{
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",lnk_positions);
 		
@@ -36,20 +36,21 @@ public class PositionsPage extends BasePage {
 	
 	public void clickNewPositons() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		btn_newposition.click();
 		btn_ITrecordnext.click();
 		
 	}
 	
-	public void enterTitle(String title)
+	public void enterTitle(String title) throws InterruptedException
 	{
+		Thread.sleep(3000);
 		txt_positionTitle.sendKeys(title);
 	}
 
 
-	public void enterMinimumPay(String minpay) {
-		
+	public void enterMinimumPay(String minpay) throws InterruptedException {
+		Thread.sleep(3000);
 		txt_minpay.sendKeys(minpay);
 		
 	}
@@ -59,8 +60,8 @@ public class PositionsPage extends BasePage {
 		
 	}
 	
-public void clickSave() {
-		
+public void clickSave() throws InterruptedException {
+	Thread.sleep(3000);
 		btn_save.click();
 		
 	}

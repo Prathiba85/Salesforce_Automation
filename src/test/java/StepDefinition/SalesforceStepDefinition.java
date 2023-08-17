@@ -25,7 +25,7 @@ public class SalesforceStepDefinition {
 	
 	@Given("I have launched the application")
 	public void i_have_launched_the_application() {
-		driver.get("https://login.salesforce.com/");
+		lp.launchApplicaiton();
 		
 	}
 

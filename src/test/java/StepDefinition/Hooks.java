@@ -26,6 +26,7 @@ public static WebDriver driver;
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
 		driver = new ChromeDriver(options);
+		
 		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 		
@@ -38,6 +39,6 @@ public static WebDriver driver;
 	       // if(scenario.isFailed()) {
 	             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	            scenario.attach(screenshot, "image/png",scenario.getName());                       
-		//driver.quit();
+		driver.quit();
 	}
 }

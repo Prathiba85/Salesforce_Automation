@@ -20,6 +20,11 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//input[@type='submit']")private WebElement btn_login;
 	@FindBy(xpath="//ul[@class='tabBarItems slds-grid']//a[@title='Home']") WebElement btn_home;
 	
+	public void launchApplicaiton()
+	{
+	
+	driver.get("https://login.salesforce.com/");
+	}
 	
 	public void enterUsername(String username)
 	{
